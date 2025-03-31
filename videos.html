@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Videos | AIFlix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .video-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-90 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-red-600">AI<span class="text-white">Flix</span></div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/" class="hover:text-red-500">News</a>
+                <a href="/videos.html" class="text-red-500">Videos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Video Sections -->
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-6">AI Video Library</h1>
+        
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Trending AI Videos</h2>
+            <div id="trendingVideos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Latest AI News Videos</h2>
+            <div id="newsVideos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        </div>
+
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">AI Tutorials</h2>
+            <div id="tutorialVideos" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
