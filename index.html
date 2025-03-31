@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .video-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="bg-black bg-opacity-90 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-red-600">AI<span class="text-white">Flix</span></div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/" class="hover:text-red-500">Home</a>
+                <a href="/videos.html" class="hover:text-red-500">Videos</a>
+                <a href="/news.html" class="hover:text-red-500">News</a>
+                <a href="/about.html" class="hover:text-red-500">About</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-search hover:text-red-500 cursor-pointer"></i>
+                <i class="fas fa-bell hover:text-red-500 cursor-pointer"></i>
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" class="w-8 h-8 rounded-full" alt="Profile">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-96 flex items-center justify-center">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Explore AI Innovations</h1>
+            <p class="text-xl mb-6">Latest videos and news about artificial intelligence</p>
+            <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-md">
+                <i class="fas fa-play mr-2"></i> Watch Now
+            </button>
+        </div>
+    </section>
+
+    <!-- News Sections -->
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-6">Breaking AI News</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a href="/news/cnn-ai-breakthrough.html" class="news-card bg-gray-800 rounded-lg overflow-hidden block hover:shadow-lg transition duration-300">
+                <img src="images/medical-ai.jpg" alt="AI Medical News" class="w-full h-64 object-cover hover:opacity-90">
+                <div class="p-4 hover:text-red-400">
+                    <h3 class="font-bold text-xl mb-2">CNN: AI Breakthrough in Medical Diagnosis</h3>
+                    <p class="text-gray-300">Researchers develop new AI that can detect cancer with 95% accuracy...</p>
+                    <div class="flex items-center mt-4 text-sm text-gray-400">
+                        <span>CNN</span>
+                        <span class="mx-2">•</span>
+                        <span>2 hours ago</span>
+                    </div>
+                </div>
+            </div>
+            <a href="/news/ai-stocks-surge.html" class="news-card bg-gray-800 rounded-lg overflow-hidden block hover:shadow-lg transition duration-300">
+                <img src="images/ai-stocks.jpg" alt="AI Stocks News" class="w-full h-64 object-cover hover:opacity-90">
+                <div class="p-4 hover:text-red-400">
+                    <h3 class="font-bold text-xl mb-2">Bloomberg: AI Stocks Surge After Fed Announcement</h3>
+                    <p class="text-gray-300">Major tech companies see record gains as AI investments pay off...</p>
+                    <div class="flex items-center mt-4 text-sm text-gray-400">
+                        <span>Bloomberg</span>
+                        <span class="mx-2">•</span>
+                        <span>5 hours ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-6">More AI Headlines</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Additional news cards would go here -->
+            <a href="/news/ai-startup-funding.html" class="news-card bg-gray-800 rounded-lg overflow-hidden block hover:shadow-lg transition duration-300">
+                <img src="images/ai-startup.jpg" alt="AI Startup News" class="w-full h-48 object-cover hover:opacity-90">
+                <div class="p-4 hover:text-red-400">
+                    <h3 class="font-bold mb-2">New AI Startup Raises $50M Series B</h3>
+                    <div class="flex items-center mt-2 text-sm text-gray-400">
+                        <span>TechCrunch</span>
+                        <span class="mx-2">•</span>
+                        <span>Yesterday</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 text-center">
+        <a href="/videos.html" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md">
+            <i class="fas fa-play mr-2"></i> Watch AI Videos
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
