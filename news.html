@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News | AIFlix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-black bg-opacity-90 p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-red-600">AI<span class="text-white">Flix</span></div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/" class="hover:text-red-500">Home</a>
+                <a href="/videos.html" class="hover:text-red-500">Videos</a>
+                <a href="/news.html" class="text-red-500">News</a>
+                <a href="/about.html" class="hover:text-red-500">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8">Latest AI News</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="/news/cnn-ai-breakthrough.html" class="news-card bg-gray-800 rounded-lg overflow-hidden block hover:shadow-lg transition duration-300">
+                <img src="https://i.ibb.co/0jq7YtT/cnn-ai.jpg" alt="CNN AI News" class="w-full h-48 object-cover hover:opacity-90">
+                <div class="p-4 hover:text-red-400">
+                    <h3 class="font-bold text-lg mb-2">AI Breakthrough in Medical Diagnosis</h3>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <span>CNN</span>
+                        <span class="mx-2">•</span>
+                        <span>2 hours ago</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/news/ai-stocks-surge.html" class="news-card bg-gray-800 rounded-lg overflow-hidden block hover:shadow-lg transition duration-300">
+                <img src="https://i.ibb.co/4WCh8dN/bloomberg-ai.jpg" alt="Bloomberg AI News" class="w-full h-48 object-cover hover:opacity-90">
+                <div class="p-4 hover:text-red-400">
+                    <h3 class="font-bold text-lg mb-2">AI Stocks Surge After Fed Announcement</h3>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <span>Bloomberg</span>
+                        <span class="mx-2">•</span>
+                        <span>5 hours ago</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/news/ai-startup-funding.html" class="news-card bg-gray-800 rounded-lg overflow-hidden block hover:shadow-lg transition duration-300">
+                <img src="https://i.ibb.co/7YfG3kK/techcrunch-ai.jpg" alt="TechCrunch AI News" class="w-full h-48 object-cover hover:opacity-90">
+                <div class="p-4 hover:text-red-400">
+                    <h3 class="font-bold text-lg mb-2">New AI Startup Raises $50M Series B</h3>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <span>TechCrunch</span>
+                        <span class="mx-2">•</span>
+                        <span>Yesterday</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
